@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tradiciones Mexicanas - Día de Muertos</title>
+
+    <!-- Fuentes de Google -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        /* ===== ESTILOS BASE ===== */
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background-color: #0d0d0d;
+            color: #f5f5f5;
+            background-image: url('https://i.imgur.com/lPoxYyT.jpeg');
+            background-size: cover;
+            background-attachment: fixed;
+            background-blend-mode: multiply;
+            scroll-behavior: smooth;
+        }
+
+        /* ===== NAVEGACIÓN ===== */
+        nav {
+            background-color: rgba(0, 0, 0, 0.85);
+            display: flex;
+            justify-content: center;
+            padding: 1rem;
+            border-bottom: 2px solid #ff6b81;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        nav a {
+            color: #ffb347;
+            text-decoration: none;
+            margin: 0 1.2rem;
+            font-weight: 600;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #ff6b81;
+            transform: scale(1.1);
+        }
+
+        /* ===== ENCABEZADO ===== */
+        header {
+            text-align: center;
+            padding: 4rem 1rem;
+            color: #ffb347;
+            text-shadow: 3px 3px 10px #ff6b81;
+        }
+
+        header h1 {
+            font-family: 'Cinzel Decorative', cursive;
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+        }
+
+        header p {
+            font-size: 1.3rem;
+            font-style: italic;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        /* ===== SECCIONES ===== */
+        section {
+            padding: 3rem 10%;
+            background-color: rgba(0, 0, 0, 0.65);
+            border-radius: 15px;
+            margin: 3rem auto;
+            max-width: 1100px;
+            box-shadow: 0 0 25px rgba(255, 180, 71, 0.3);
+            animation: fadeIn 1.2s ease;
+        }
+
+        h2 {
+            font-family: 'Cinzel Decorative', cursive;
+            color: #ffb347;
+            text-align: center;
+            text-shadow: 2px 2px 10px #ff6b81;
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        p {
+            text-align: justify;
+            line-height: 1.8;
+            font-size: 1.1rem;
+        }
+
+        /* ===== GALERÍA ===== */
+        .galeria {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+            margin-top: 1.5rem;
+        }
+
+        .galeria img {
+            width: 280px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+            border: 2px solid #ffb347;
+        }
+
+        .galeria img:hover {
+            transform: scale(1.08);
+            box-shadow: 0 0 20px #ff6b81;
+        }
+
+        /* ===== OFRENDA ===== */
+        .ofrenda {
+            background-color: rgba(255, 180, 71, 0.1);
+            border-left: 5px solid #ffb347;
+            padding: 1.5rem;
+            border-radius: 10px;
+            margin-top: 1rem;
+        }
+
+        .ofrenda ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .ofrenda li {
+            margin: 0.8rem 0;
+            font-size: 1.1rem;
+        }
+
+        /* ===== DECORACIÓN ===== */
+        .decoracion {
+            text-align: center;
+            font-size: 2rem;
+            color: #ff6b81;
+            margin: 2rem 0;
+        }
+
+        @keyframes flicker {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.6; }
+        }
+
+        .vela {
+            color: #ffb347;
+            animation: flicker 1s infinite;
+        }
+
+        /* ===== PIE DE PÁGINA ===== */
+        footer {
+            text-align: center;
+            padding: 2.5rem;
+            background: rgba(0, 0, 0, 0.9);
+            color: #ffb347;
+            font-size: 1rem;
+            border-top: 2px solid #ff6b81;
+        }
+
+        footer p {
+            margin: 0.5rem 0;
+        }
+
+        /* ===== ANIMACIONES ===== */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* ===== RESPONSIVO ===== */
+        @media (max-width: 768px) {
+            header h1 { font-size: 2.5rem; }
+            section { padding: 2rem 5%; }
+            .galeria img { width: 100%; max-width: 320px; height: auto; }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navegación -->
+    <nav>
+        <a href="#historia">Historia</a>
+        <a href="#catrina">La Catrina</a>
+        <a href="#ofrenda">Ofrenda</a>
+    </nav>
+
+    <!-- Encabezado -->
+    <header>
+        <h1>🌺 Día de Muertos 🌺</h1>
+        <p>Una celebración mexicana llena de color, amor y memoria, donde la vida y la muerte bailan al compás del recuerdo.</p>
+    </header>
+
+    <!-- Sección Historia -->
+    <section id="historia">
+        <h2>✨ El Origen del Día de Muertos ✨</h2>
+        <p>
+            El <strong>Día de Muertos</strong> es una de las tradiciones más emblemáticas de México, una fusión de las creencias indígenas prehispánicas y el catolicismo traído por los españoles.
+            En la época precolombina, culturas como la mexica, purépecha, maya y totonaca rendían homenaje a sus difuntos, creyendo que el alma de los muertos regresaba para visitar a sus seres queridos.
+        </p>
+        <p>
+            Con el tiempo, esta celebración se unió con las festividades católicas del <em>Día de Todos los Santos</em> y <em>Fieles Difuntos</em>, dando origen al actual Día de Muertos, que se celebra cada 1 y 2 de noviembre.
+        </p>
+        <div class="galeria">
+            <img src="https://cdn.unotv.com/images/2024/10/elementos-de-la-ofrenda-de-muertos-105546-1024x576.jpg" alt="Ofrenda de Día de Muertos">
+            <img src="https://images.cults3d.com/NmZ0Rtq6MYBjuIOB0JgpUDpBae0=/516x516/filters:no_upscale()/https://fbi.cults3d.com/uploaders/39244704/illustration-file/264ffefe-b32b-4350-94b0-0bac8eed41ef/Diseno-sin-titulo-1.png" alt="Calaveras de azúcar">
+            <img src="https://cdn-3.expansion.mx/dims4/default/cf810fc/2147483647/strip/true/crop/1280x854+0+0/resize/1800x1201!/format/webp/quality/80/?url=https%3A%2F%2Fcdn-3.expansion.mx%2Fa0%2Fa7%2Fef41326b4554904fcf54c8331e6e%2Fflor-de-cempasuchil.jpeg" alt="Cempasúchil">
+        </div>
+    </section>
+
+    <!-- Sección Catrina -->
+    <section id="catrina">
+        <h2>💀 El Origen de La Catrina 💀</h2>
+        <p>
+            La <strong>Catrina</strong>, también conocida como "La Calavera Garbancera", fue creada por el grabador mexicano <strong>José Guadalupe Posada</strong> a principios del siglo XX.
+            Originalmente, era una crítica a las clases altas mexicanas que negaban sus raíces indígenas y adoptaban costumbres europeas.
+        </p>
+        <p>
+            Más tarde, el artista <strong>Diego Rivera</strong> la inmortalizó en su mural <em>"Sueño de una tarde dominical en la Alameda Central"</em>, dándole su característico atuendo elegante y sombrero adornado.
+            Hoy, La Catrina es el símbolo más icónico del Día de Muertos, recordándonos que <strong>la muerte nos iguala a todos</strong>.
+        </p>
+        <div class="galeria">
+            <img src="https://storage.googleapis.com/gx-global-cms/mkt/6d6cb90f-9946-4520-9569-6a5efe4ac5c2.png" alt="La Catrina original">
+            <img src="https://fuentevillagallery.com/cdn/shop/files/Catrina_con_Colla_print.jpg?v=1738346192" alt="Catrina moderna">
+        </div>
+    </section>
+
+    <!-- Sección Ofrenda -->
+    <section id="ofrenda">
+        <h2>🕯️ Elementos de la Ofrenda 🕯️</h2>
+        <div class="ofrenda">
+            <p>La <strong>ofrenda</strong> es el corazón del Día de Muertos. En ella se colocan objetos que guían a las almas en su regreso:</p>
+            <ul>
+                <li>🌼 <strong>Cempasúchil:</strong> su aroma y color guían a los espíritus.</li>
+                <li>🍞 <strong
